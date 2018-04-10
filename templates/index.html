@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSCI 127</title>
+</head>
+<body>
+    <h1>Joy and Beauty of Data Projects in JavaScript</h1>
+
+    <ul>
+        {% for project in projects %}
+        <li><a href="{{ url_for("project_page", which_project=project) }}">{{ project }}</a></li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
